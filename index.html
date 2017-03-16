@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Clone</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body class="wrapper">
+	<nav id="nav-wrapper">
+		<div class="navlinks">
+			<ul>
+				<li><a href="https://www.google.com/gmail/about/">Gmail</a></li>
+				<li><a href="https://www.google.com/imghp?hl=en&tab=wi&ei=rwrKWNOfK4rUmwHU_58Q&ved=0EKouCBgoAQ">Images</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-th"></span></a></li>
+				<li class="navbox"><a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/imghp%3Fhl%3Den%26tab%3Dwi%26ei%3DrwrKWNOfK4rUmwHU_58Q%26ved%3D0EKouCBgoAQ#identifier">Sign In</a></li>
+			</ul>
+			</div>
+		</div>		
+	</nav>
+	<div class="logo">
+	<table>
+		<tr id="colored-logo">
+			<td class="char1">G</td>
+			<td class="char2">o</td>
+			<td class="char3">o</td>
+			<td class="char4">g</td>
+			<td class="char5">l</td>
+			<td class="char6">e</td>
+		</tr>
+	</table>
+	</div>
+	<div class="srch-form">
+		<form action="www.google.com" method="post"></form>
+		<input type="text" class="input-bar" data-toggle="tooltip" title="Search"><i class="fa fa-microphone" data-toggle="tooltip" title="Search by voice" ></i>
+		<div class="srch-btns">
+			<input type="submit" value="Google Search" style="border:none">
+			<input type="submit" value="I'm Feeling Lucky" style="border:none">
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		document.querySelector('.input-bar').addEventListener('keypress', function (e) {
+    	var key = e.which || e.keyCode;
+    	if (key === 13) { // 13 is enter
+	      // code for enter
+	      window.location.href="https://www.google.com/";
+	    }
+	});
+		document.querySelector('.srch-btns').addEventListener("click", myFunction);
+
+		function myFunction() {
+		   window.location.href="https://www.google.com/";
+		};
+
+	</script>
+	<!-- room for some javascript --> 
+</body>
+<footer id="footer-wrapper">
+  <ul class="footer-left">
+    <li><a href="https://www.google.com/ads/ce/wt/?utm_expid=95258301-48.Nx6Rrpi6Q1GQ3fWV6gpEPg.2&fg=1&utm_referrer=https%3A%2F%2Fwww.google.com%2F">Advertising</a></li>
+    <li><a href="https://www.google.com/services/?fg=1#?modal_active=none">Business</a></li>
+    <li><a href="https://www.google.com/intl/en/about/">About</a></li>
+  </ul>
+  <ul class="footer-right">
+    <li><a href="https://www.google.com/intl/en/policies/privacy/?fg=1">Privacy</a></li>
+    <li><a href="https://www.google.com/intl/en/policies/terms/?fg=1">Terms</a></li>
+    <li><a href="https://www.google.com/preferences?hl=en&fg=1">Settings</a></li>
+  </ul>
+</footer>
+</html>
